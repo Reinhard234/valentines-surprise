@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster&display=swap">
+</head>
+
+<body>
+    <div class="container">
+
+        <h1><span class="our">Our funny </span> <span class="story">unfunny story</span></h1>
+
+        <div class="timeline">
+            <ul>
+                <li>
+                    <div class="content">
+                        <h3>The start of our journey </h3>
+                        <img src="images/september2022.JPG" alt="Description of the image">
+                        <p class="description">Oh how young and naive we were. We were not prepared for the beautiful
+                            adventure that we were about to embark on</p>
+                        <div class="line"></div>
+                        <div class="key-moments">
+                            <div>Parking lot dates</div>
+                            <div>Office make out sessions</div>
+                            <div>Finding our footing</div>
+                        </div>
+                    </div>
+                    <div class="time">
+                        <h4>Sept - Dec 2022</h4>
+                    </div>
+                </li>
+
+                <li class="timeline-not-clicked">
+                    <div class="content">
+                        <h3>Adulting 101 </h3>
+                        <img src="images/january2023.jpg" alt="Description of the image">
+                        <p class="description">How about moving in together after only a few months of being together? I
+                            am sure we'll do fine
+                        </p>
+                        <div class="line"></div>
+                        <div class="key-moments">
+                            <div>Roco mamas overload</div>
+                            <div>House & Home affairs</div>
+                            <div>No wifi, no problem</div>
+                            <div>Eish infancy</div>
+                        </div>
+                    </div>
+                    <div class="time">
+                        <h4>January 2023</h4>
+                    </div>
+                </li>
+
+                <li class="timeline-not-clicked">
+                    <div class="content">
+                        <h3>Firefighting 101 </h3>
+                        <img src="images/fire.gif" alt="Description of the image">
+                        <p class="description">Why did no one teach us how to deal with house fires??? I thought this
+                            was meant to be easy (you are super brave btw)
+                        </p>
+                        <div class="line"></div>
+                        <div class="key-moments">
+                            <div>Lonely upstairs living</div>
+                            <div>Parrots eisbein</div>
+                            <div>Dirty feet for weeks</div>
+                        </div>
+                    </div>
+                    <div class="time">
+                        <h4>March 2023</h4>
+                    </div>
+                </li>
+
+                <li class="timeline-not-clicked">
+                    <div class="content">
+                        <h3>In Sickness and health </h3>
+                        <img src="images/sad-funny.gif" alt="Description of the image">
+                        <p class="description">With great fires, comes sickness, and not sleeping in our own beds. We
+                            have actually been through a shit ton lol
+                        </p>
+                        <div class="line"></div>
+                        <div class="key-moments">
+                            <div>Sleeping at G-mans for 2 weeks</div>
+                            <div>Gurgling that weird yellow stuff</div>
+                            <div>Working from home</div>
+                        </div>
+                    </div>
+                    <div class="time">
+                        <h4>April 2023</h4>
+                    </div>
+                </li>
+
+                <li class="timeline-not-clicked">
+                    <div class="content">
+                        <h3>grazie mille mia bella</h3>
+                        <img src="images/laks.jpg" alt="Description of the image">
+                        <p class="description">How were we even sane at this point after everything that happened to us.
+                            How did we have money for this? I am pretty sure we just went down the street lol.
+                        </p>
+                        <div class="line"></div>
+                        <div class="key-moments">
+                            <div>Gelato</div>
+                            <div>Stefano</div>
+                            <div>everything</div>
+                        </div>
+                    </div>
+                    <div class="time">
+                        <h4>Oct - Nov 2023</h4>
+                    </div>
+                </li>
+
+                <li class="timeline-not-clicked">
+                    <div class="content">
+                        <h3>Gucci pucci in her hucci</h3>
+                        <img src="images/gucca.jpg" alt="Description of the image">
+                        <p class="description">I know this hasn't happened yet, but I just had to include it. This is
+                            going to be such an amazing adventure with you (you 2 hehe).
+                        </p>
+                        <div class="line"></div>
+                        <div class="key-moments">
+                            <div>Gucci walks</div>
+                            <div>Gucci dates</div>
+                            <div>Gucci cuddles</div>
+                        </div>
+                    </div>
+                    <div class="time">
+                        <h4>Jan - Feb 2024</h4>
+                    </div>
+                </li>
+
+                <li class="timeline-not-clicked" id="valentinesDay">
+                    <div class="content">
+                        <h3>Valentines day</h3>
+                        <p>I know I can be very difficult sometimes, and that we have our ups and downs. But you are my
+                            life partner, and there is literally no one else that I would like to go on this adventure
+                            with. Would you like to extend our adventure and be my valentine?</p>
+
+                        <!-- Buttons for "No" and "Yes" -->
+                        <div class="buttons">
+                            <button class="no-button" onclick="handleValentineResponse('no')">No</button>
+                            <button class="yes-button" onclick="handleValentineResponse('yes')">Yes</button>
+                        </div>
+
+                        <!-- Container for displaying GIFs -->
+                        <div id="valentineGifContainer"></div>
+                    </div>
+                    <div class="time">
+                        <h4>February 2024</h4>
+                    </div>
+                </li>
+
+
+                <div style="clear:both;"></div>
+            </ul>
+        </div>
+    </div>
+</body>
+<script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script>
+
+<script src="script.js"></script>
+<script>
+    function handleValentineResponse(response) {
+        const gifContainer = document.getElementById('valentineGifContainer');
+
+        // Remove any existing GIFs
+        while (gifContainer.firstChild) {
+            gifContainer.removeChild(gifContainer.firstChild);
+        }
+
+        if (response === 'no') {
+            // Display GIF for "No" response
+            const gifNo = document.createElement('img');
+            gifNo.src = '../images/huh.gif'; // Replace with the actual path to the "No" GIF
+            gifContainer.appendChild(gifNo);
+        } else if (response === 'yes') {
+            // Display GIF for "Yes" response
+            const gifYes = document.createElement('img');
+            gifYes.src = '../images/monkae.gif'; // Replace with the actual path to the "Yes" GIF
+            gifContainer.appendChild(gifYes);
+        }
+    }
+</script>
+
+</html>
